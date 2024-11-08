@@ -1,0 +1,60 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+
+.container h1{
+    text-align: center;
+    color: red;
+}
+
+.lights-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-left: black;
+    border-right: black;
+    
+    background-color: black;
+    padding: 20px;
+   
+}
+
+.light {
+    width: 150px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: white;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.light.active {
+    background-color: #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+button {
+    width: 120px;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}

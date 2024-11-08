@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSQue 1</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        text-align: center;
+        color: lightcoral;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        width: 150px;
+        height: 100px;
+        background: url("/assets/images/4WqQ.gif") no-repeat center/cover;
+        color: #121212;
+        padding: 8px;
+        font-size: 1.1rem;
+        font-weight: 550;
+        border-bottom: 2px solid #aaa;
+      }
+
+      .image {
+        background: url("/assets/images/home.gif") no-repeat center/cover;
+        width: 200px;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>JS Que</p>
+
+    <div class="container">
+      <div class="card"><span>A</span></div>
+      <div class="card"><span>B</span></div>
+      <div class="card"><span>C</span></div>
+      <div class="card"><span>D</span></div>
+      <div class="card"><span>E</span></div>
+      <div class="card"><span>F</span></div>
+      <div class="image"></div>
+    </div>
+
+    <!-- JS -->
+    <script>
+      function rotateLetters() {
+        var cards = document.getElementsByClassName("card");
+        var letters = [];
+
+        for (var i = 0; i < cards.length; i++) {
+          letters.push(cards[i].getElementsByTagName("span")[0].textContent);
+        }
+
+        setInterval(function () {
+          var lastLetter = letters[letters.length - 1];
+
+          for (var i = letters.length - 1; i > 0; i--) {
+            letters[i] = letters[i - 1];
+          }
+          letters[0] = lastLetter;
+
+          for (var i = 0; i < cards.length; i++) {
+            cards[i].getElementsByTagName("span")[0].textContent = letters[i];
+          }
+        }, 1000);
+      }
+
+      rotateLetters();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT assiment 8</title>
+    <style>
+       
+       *{
+        margin: 0%;
+        padding: 0%;
+       
+       }
+
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        overflow-x: hidden;
+        
+       }
+
+       header{
+        background-color: black;
+        color: wheat;
+        padding: 10px 0;
+        text-align: center;
+       }
+
+       .logo img {
+        max-width: 20%;
+       }
+       .header-text h1 {
+        margin: 0;
+       }
+
+       .header-text p {
+        margin: 5px 0;
+        font-size: 0.9em;
+       }
+
+
+
+
+       .container{
+        margin: 50px auto;
+        border: 5px solid greenyellow;
+        background-color: black;
+        height: auto;
+        min-height: 40vh;
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 15px;
+       
+
+
+
+       }
+
+
+       .assiment-box {
+        width: 150px;
+        height: 100px;
+       
+        background-color: yellow;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        transition: width 1s ease;
+     
+       }
+
+       .assiment-box:hover {
+        width: 200px;
+       }
+
+       .assiment-index {
+        font-size: 40px;
+       }
+
+       .assiment-name {
+            opacity: 0;
+       }
+
+
+       .assiment-box:hover .assiment-name {
+        opacity: 1;
+       }
+
+
+       .assiment-box:hover .assiment-index {
+        font-size: 32px;
+       }
+
+     
+
+       .assiment-name  a {
+        text-decoration: none;
+       }
+
+       footer {
+        text-align: center;
+        background-color: gray;
+        color: white;
+        padding: 10px 0;
+        margin-top: 5px;
+       }
+
+
+
+       body > .container-dots {
+        border: 4px solid black;
+            margin: 15px auto;
+            background-color: yellow;
+            height: 50vh;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+
+        
+
+          
+        }
+
+
+
+      
+       .container-dots {
+            display: flex;
+            gap: 12px;
+           
+         }
+
+
+         .dot {
+            width: 60px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            animation: bounce 2s ease-in-out infinite;
+            /* justify-content: center;
+            align-items: center; */
+             padding-top: 12px;
+            text-align: center;
+           
+        }
+
+
+        @keyframes bounce{
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                 transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        #dot-1 {
+            animation-delay: 0s;
+            background-color: red;
+        }
+
+        #dot-2 {
+            animation-delay: 0.3s;
+            background-color: orange;
+        }
+        #dot-3 {
+            animation-delay: 0.6s;
+            background-color: black;
+        }
+
+        #dot-4 {
+            animation-delay: 0.9s;
+            background-color: blue;
+        }
+
+        #dot-5 {
+            animation-delay: 1.2s;
+            background-color: indigo;
+        }
+
+        #dot-6 {
+            animation-delay: 1.4s;
+            background-color: violet;
+        }
+        #dot-7 {
+            animation-delay: 1.6s;
+            background-color: red;
+        }
+        #dot-8 {
+            animation-delay: 1.8s;
+            background-color: orange;
+
+        }
+
+        #dot-9 {
+            animation-delay: 2s;
+            background-color: black;
+        }
+        #dot-10 {
+            animation-delay: 2.2s;
+            background-color: blue;
+            
+        }
+
+        #dot-11{
+            animation-delay: 2.4s;
+            background-color: indigo;
+           
+        }
+        #dot-12{
+            animation-delay: 2.6s;
+            background-color: violet;
+           
+        }
+        #dot-13{
+            animation-delay: 2.8s;
+            background-color: red;
+           
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/images/image.png" alt="mylogo">
+            <div class="header-text">
+                <h1>Internet Technology Assiment- 8(i) - 8(ii) </h1>
+                <p>Maleesha Madushanka Abesinha - ID : 200301001486</p>
+
+            </div>
+
+
+
+        </div>
+
+       
+    
+        
+
+    </header>
+
+    <div class="container-dots">
+        <div class="dot" id="dot-1">A</div>
+        <div class="dot" id="dot-2">S</div>
+        <div class="dot" id="dot-3">S</div>
+        <div class="dot" id="dot-4">I</div>
+        <div class="dot" id="dot-5">M</div>
+        <div class="dot" id="dot-6">E</div>
+        <div class="dot" id="dot-7">N</div>
+        <div class="dot" id="dot-8">T</div>
+        <div class="dot" id="dot-9">C</div>
+        <div class="dot" id="dot-10">A</div>
+        <div class="dot" id="dot-11">S</div>
+        <div class="dot" id="dot-12">E</div>
+        <div class="dot" id="dot-13">S</div>
+
+
+
+
+
+    </div>
+
+
+
+    
+
+    
+    <div class="container">
+        
+      
+
+        <div class="assiment-box">
+            <span class="assiment-index">JSQue</span>
+            <span class="assiment-name">
+        
+                <a href="/pages/Part-1 JSQue.html">Part 1</a>
+
+                    
+                
+               
+
+            </span>
+        </div>
+
+        <div class="assiment-box">
+            <span class="assiment-index">JsQue2</span>
+            <span class="assiment-name">
+        
+                <a href="/pages/Part-2 jsQue2.html">Part 2</a>
+
+                    
+                
+               
+
+            </span>
+        </div>
+
+        <div class="assiment-box">
+            <span class="assiment-index">KnightRider</span>
+            <span class="assiment-name">
+            
+                <a href="/pages/KnightRider.html">Part</a>
+
+
+            </span>
+
+        </div>
+
+        
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 .Maleesha Madushanka Abesinha All Rights Reserved</p>
+        
+
+    </footer>
+
+
+
+   
+
+   
+
+   
+</body>
+</html>
